@@ -9,6 +9,7 @@ public class VarDemo {
     System.out.println("인스턴스변수 :" + v.instanceVar);
     v.instanceVar = 10;
     v.methodTest();
+    System.out.println(Math.PI);
   }
 }
 
@@ -25,3 +26,4 @@ class VarTest {
     return staticVar;
   }
 }
+

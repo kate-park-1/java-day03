@@ -7,8 +7,12 @@ public class Ball {
     return radius;
   }
 
-  void setRadius(double r){
-    radius = r;
+  void setRadius(double radius){ // 설정자(셋터) : 데이터 검증
+    if(radius > 0){
+      this.radius = radius;
+    }else {
+      System.out.println("원의 반지름은 0보다 커야 합니다.");
+    }
   }
   double getVolumn(){   // 메서드
     return 4/3 * 3.14 * radius * radius * radius;

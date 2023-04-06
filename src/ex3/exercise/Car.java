@@ -7,7 +7,8 @@ public class Car {
   public Car(String color) {
     this.color = color;
     numOfCar++;
-    if (this.color.equalsIgnoreCase("red")) {
+    if (color == "red" || color == "RED" || color == "reD") {
+       // color.equalsIgnoreCase("red")) {
       numOfRedCar++;
     }
   }
